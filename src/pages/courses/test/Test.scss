@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.test {
+  &-title {
+    font-size: 1.2em;
+    font-weight: 600;
+
+    > p {
+      font-weight: normal;
+    }
+  }
+  &-body {
+    background: $test-body-bg-color;
+  }
+}
+#app .test-footer{
+  padding-top: 8px!important;
+  .v-btn {
+    text-shadow: none;
+  }
+  &.secondary{
+    border-bottom: 0;
+    &:after{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+#app{
+  .v-content {
+    background: -webkit-gradient(linear, left bottom, left top, from(#0eb69a), to(#4e78a0));
+    background: linear-gradient(0deg, #0eb69a, #4e78a0);
+  }
+
+  .theme--light.v-sheet
+  {
+    .v-card__title.primary{
+      color: whitesmoke;
+    }
+  }
+  .theme--light.v-list {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  .user--info  {
+    .v-list__tile--avatar {
+      background-color: transparent;
+      border: none;
+    }
+    .user--info-balance {
+      font-size: 0.875rem;
+    }
+  }
+  .border-color-green{border-color: #388e3c !important;}
+  .border-color-red{border-color: #d32f2f !important;}
+  .border-color-orange{border-color: #ffa726 !important;}
+  .bg-color-green{background-color: #388e3c !important;}
+  .bg-color-red{background-color: #d32f2f !important;}
+  .bg-color-orange{background-color: #ffa726 !important;}
+
+}

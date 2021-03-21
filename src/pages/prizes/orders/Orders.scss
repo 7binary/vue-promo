@@ -1,0 +1,46 @@
+.orders {
+  &__tabs {
+    .theme--light.v-tabs-items {
+      background: none!important;
+    }
+  }
+
+  .icon-download {
+    color: #666;
+    font-size: 32px;
+    padding-right: 6px;
+
+    &:hover {
+      color: #111;
+    }
+  }
+}
+.certificate-list{
+  .sert-label{
+    color: #666;
+  }
+  .sert-title{
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.payments-list {
+  .pay-label {
+    color: #666;
+  }
+  .pay-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    &.date{
+      font-size: 1rem;
+    }
+  }
+  &__icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

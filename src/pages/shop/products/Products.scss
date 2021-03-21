@@ -1,0 +1,18 @@
+@import '../../../assets/scss/variables';
+
+.products {
+  &__title {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  &__option {
+
+  }
+  &__option-label {
+    font-weight: 600;
+  }
+  &__option-value {
+    color: $products-option-value-color;
+  }
+}

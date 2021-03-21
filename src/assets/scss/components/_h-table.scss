@@ -1,0 +1,40 @@
+.h-table {
+  display: table;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+
+  &__tr {
+    display: table-row;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  &__thead {
+    display: table-header-group;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  &__tbody {
+    display: table-row-group;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  &__td, &__th {
+    display: table-cell;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+}

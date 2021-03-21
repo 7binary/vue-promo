@@ -1,0 +1,9 @@
+@import '../../../assets/sass/variables';
+
+.v-application {
+  .headline {
+    @media only screen and (max-width: 480px) {
+      font-size: 1.2rem!important;
+    }
+  }
+}

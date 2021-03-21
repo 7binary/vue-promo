@@ -1,0 +1,143 @@
+.paymentsMemuItem {
+  width: calc((100% / 6) - 16px);
+  max-width: 160px;
+  height: 100px;
+  border-radius: 8px;
+
+  .ico-phone,
+  .ico-yandex,
+  .ico-webmoney,
+  .ico-qiwi,
+  .ico-card,
+  .ico-rbs{
+    background-repeat: no-repeat;
+    background-position: 50% 5px;
+    -webkit-background-size: 70%;
+    background-size: 70%;
+  }
+
+  .mode{
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 65%;
+    line-height: 1.1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25);
+    background-color: #e6e6e6;
+    transition: 0.3s;
+
+    &-title{
+      padding: 4px 8px;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      border-radius: 0 0 8px 8px;
+      width: 100%;
+      letter-spacing: 0.8px;
+      font-size: 13px;
+    }
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color: #fff;
+      transition: 0.3s;
+    }
+  }
+
+  &.paymentsMemuActiveItem {
+    position: relative;
+
+    .mode{
+      transform: scale(1.15) translateY(6px);
+      background-color: #fff;
+    }
+  }
+}
+.prizes-form{
+  display: flex;
+  //background: #e6e6e6;
+  padding: 4px 8px;
+  border-radius: 8px;
+  .v-input{
+    margin-right: 8px;
+    &:last-child{
+      margin-right: 0;
+      margin-left: 8px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .paymentsMemuItem {
+    flex-wrap: wrap;
+    width: calc((100% / 3) - 16px);
+
+    .mode {
+      position: relative;
+      transform: none;
+      &:hover{
+        cursor: pointer;
+        transform: none;
+        background-color: #fff;
+        transition: 0.3s;
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+    }
+    &.paymentsMemuActiveItem {
+      .mode{
+        transform: none;
+        background-color: #fff;
+
+        &:before{
+          border: 2px solid #ae0e15;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+.paymentsMemu{
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .payments{
+    .headline {
+      font-size: 18px !important;
+      line-height: 1.33 !important;
+    }
+    &__title{
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .paymentsMemuItem {
+    flex-wrap: wrap;
+    width: calc((100% / 2) - 16px);
+  }
+
+  .prizes-form{
+    flex-wrap: wrap;
+    flex-direction: column;
+    .v-input{
+      margin-right: 0;
+      &:last-child{
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}

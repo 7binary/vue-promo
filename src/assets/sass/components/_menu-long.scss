@@ -1,0 +1,136 @@
+.menu-btn{
+  position: relative;
+  border-radius: 8px 8px 0px 0px;
+
+  .menu-title{
+    border-radius:  0px 0px 8px 8px;
+    min-width: 88px;
+    height: 28px;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: -10px;
+    margin-left: 0!important;
+    color: #fff;
+    /*background: #004b8e;*/
+    background: #4f88b5;
+    padding: 3px 6px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  &.long-title {
+    .menu-title {
+      font-size: 0.8rem;
+      padding: 5px 0 0 0;
+    }
+  }
+
+  &.number{
+    .menu-title {
+      font-size: 1.2rem;
+      padding: 2px 6px;
+    }
+  }
+
+  &:hover > .v-btn__content .menu-title{
+    transform: translateY(0);
+    opacity: 1;
+    transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+  }
+
+  &.v-btn--active > .v-btn__content .menu-title{
+    transform: translateY(0);
+    opacity: 1;
+    font-size: 0.8rem;
+    padding: 0px 0px 2px 0px;
+    height: 20px;
+  }
+
+  &:first-child:hover > .v-btn__content .menu-title,
+  &.v-btn--active:first-child > .v-btn__content .menu-title{
+    opacity: 0;
+    display: none;
+  }
+
+  &.notify{
+    .v-badge{
+      position: absolute;
+      right: 15px;
+      top: 0;
+    }
+  }
+}
+
+.menu__list {
+  .v-btn__content i{
+    font-size: 24px;
+  }
+  &.hide-home{
+    .home{
+      display: none;
+    }
+  }
+}
+.logo-wraper{
+  margin-left: 0;
+}
+
+#header {
+  .v-btn {
+    font-size: 1rem;
+    min-width: 35px;
+    padding: 0 15px;
+  }
+  .v-btn__title{
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    color: #0e0e0e;
+  }
+  .v-btn__content {
+      flex-direction: column;
+  }
+  .v-btn .v-btn__content .v-icon {
+    color: #808080;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .menu-btn .menu-title{
+    left: -16px;
+  }
+}
+
+@media only screen and (min-width: 1263px) {
+  .hidden-md-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1263px) {
+  #app #header .v-toolbar__title {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -48px;
+  }
+
+  .v-toolbar__side-icon{
+    .v-btn__content .v-icon{
+      transition: none;
+      color: #f85032;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .v-toolbar__side-icon{
+    margin: 6px !important;
+    &:after {
+      display: none;
+      content: '';
+    }
+  }
+}

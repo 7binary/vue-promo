@@ -1,0 +1,98 @@
+@import '../../../assets/scss/variables';
+
+.passport {
+  .el-autocomplete {
+    width: 100%;
+
+    .el-input__inner {
+      border: none;
+    }
+  }
+
+  #address-suggestion {
+    margin-top: -10px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  #address-suggestion table td:first-child {
+    padding-right: 15px;
+    color: $passport-address-bg-cell-first;
+  }
+
+  #address-suggestion table td:last-child {
+    color: $passport-address-bg-cell-last;
+  }
+
+  .taxes-comment {
+    border-top: 1px solid $passport-taxes-comment-border-color;
+    padding: 10px 0;
+  }
+
+  .taxes-time {
+    font-size: 12px;
+    color: $passport-taxes-time-color;
+  }
+
+  .taxes-note {
+    font-size: 16px;
+    color: darkred;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .taxes-documents img {
+    max-height: 150px;
+    max-width: 100%;
+  }
+
+  .adress-table {
+    display: flex;
+    flex-direction: column;
+    //width: 300px;
+
+    .at-wrap {
+      display: flex;
+      border-bottom: 1px solid #fff;
+      border-top: 1px solid #ccc;
+
+      &:nth-child(odd) {
+        background-color: $passport-address-table-bg-odd;
+      }
+
+      &:nth-child(even) {
+        background-color: $passport-address-table-bg-even;
+      }
+
+      .atw {
+        &-title {
+          width: 150px;
+          padding: 2px 4px;
+          font-weight: 600;
+        }
+
+        &-data {
+          padding: 2px 4px;
+        }
+      }
+    }
+  }
+
+  &__img-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__img-input {
+    align-items: flex-end !important;
+
+    .v-input__prepend-outer {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}

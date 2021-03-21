@@ -1,0 +1,12 @@
+.purse {
+  &__card {
+    height: 100%;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__head-date {
+    font-size: 14px;
+  }
+}

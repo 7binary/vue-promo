@@ -1,0 +1,35 @@
+.news {
+  height: auto!important;
+
+  &__card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+  .noread .news__card{
+    &:before {
+      content: 'new';
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0 12px;
+      background-color: green;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 10px;
+      z-index: 5;
+      box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 6px;
+  }
+  &__date {
+    font-size: 12px;
+    padding-bottom: 6px;
+  }
+}

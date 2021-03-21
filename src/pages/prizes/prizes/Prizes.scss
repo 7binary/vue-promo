@@ -1,0 +1,11 @@
+.prizes {
+  &__card {
+    background: none!important;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../assets/scss/variables';
+
+.courses {
+  &__card-content {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    background: $courses-title-bg-color;
+  }
+
+  &__card-footer {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__bonuses {
+    width: 100%;
+    background: $courses-bonuses-bg-color;
+  }
+}

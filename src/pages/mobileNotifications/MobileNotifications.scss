@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables';
+
+.bell {
+  &__list-item {
+    flex-direction: row;
+
+    &:nth-child(odd){
+      background: $notifications-odd-bg-color;
+    }
+    &:nth-child(even){
+      background: $notifications-even-bg-color;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+
+      .bell__list-avatar {
+        display: none;
+      }
+
+      .bell__list-action {
+        margin-left: 0!important;
+        margin-bottom: 0!important;
+      }
+    }
+  }
+
+  &__list-title {
+    font-weight: 600;
+  }
+
+  &__list-avatar {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,78 @@
+.sales {
+
+}
+
+//.sale-status{
+//  border: 1px solid rgba(255,255,255,0.5);
+//  text-shadow: none;
+//  font-weight: 600;
+//}
+//
+//
+//@media (max-width: 600px) {
+//  .table-sales thead{
+//    display: none;
+//  }
+//  .table-sales tbody tr{
+//    display: flex;
+//    flex-direction: column;
+//    width: 100%;
+//    position: relative;
+//    margin-bottom: 8px;
+//    padding: 8px 0;
+//  }
+//  .table-sales tbody tr td{
+//    padding: 0 8px!important;
+//    height: auto;
+//  }
+//  .table-sales .delete-td{
+//    position: absolute;
+//    right: 0px;
+//    top: 8px;
+//    height: auto;
+//  }
+//  .table-sales .delete-td i{
+//    border-radius: 50%;
+//    font-size: 24px;
+//    padding: 4px;
+//    background-color: #b1181f;
+//    color: #fff!important;
+//  }
+//  .table-sales .slide-td{
+//    padding-left:24px!important;
+//  }
+//  .table-sales .image-td{
+//    width: 100%;
+//    text-align: center !important;
+//  }
+//}
+//
+//@media (max-width: 500px) {
+//  .sales{
+//    &__btn {
+//      &-bottom{
+//        .layout{
+//          flex-direction: column-reverse;
+//        }
+//        .v-btn{
+//          width: 100%;
+//        }
+//      }
+//    }
+//    .first-btn{
+//      margin-top: 8px;
+//    }
+//  }
+//  .sale-status .v-chip__content{
+//    text-indent: -9999px;
+//    width: 16px;
+//    height: 16px;
+//    padding: 0;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    .status-point{
+//      transform: none;
+//    }
+//  }
+//}

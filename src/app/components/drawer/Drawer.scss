@@ -1,0 +1,43 @@
+@import '../../../assets/scss/variables';
+
+.drawer {
+  z-index: $drawer-index!important;
+
+  &__header {
+    background-color: $drawer-header-bg-color;
+  }
+
+  &__user-name {
+    font-size: $drawer-header-text-size!important;
+    color: $drawer-header-text-color;
+    line-height: 1.2!important;
+  }
+
+  &__header-icon {
+    font-size: $drawer-header-icon-size;
+  }
+
+  &__link {
+    padding: 4px 16px;
+    position: relative;
+
+    &--bordered {
+      border-bottom: 1px solid $drawer-link-border-color;
+    }
+
+    .v-badge__badge {
+      bottom: calc(100% - 8px)!important;
+      left: calc(100% - 8px)!important;
+    }
+  }
+
+  &__link-text {
+    font-size: $drawer-link-text-size!important;
+    color: $drawer-link-text-color;
+  }
+
+  &__link-icon {
+    font-size: $drawer-link-icon-size!important;
+    color: $drawer-link-icon-color;
+  }
+}

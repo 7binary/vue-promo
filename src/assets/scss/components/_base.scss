@@ -1,0 +1,11 @@
+body {
+  font-size: $font-size-base;
+  font-family: $font-roboto;
+  color: $color-black;
+}
+
+.icon {
+  &--hovered {
+    cursor: pointer;
+  }
+}

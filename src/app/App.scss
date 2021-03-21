@@ -1,0 +1,31 @@
+@import '../assets/scss/variables';
+
+.app {
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+
+  .v-application {
+    &--wrap {
+      background: -webkit-gradient(linear, left bottom, left top, from(#0eb69a), to(#4e78a0));
+      background: linear-gradient(0deg, #0eb69a, #4e78a0);
+    }
+  }
+
+  .main {
+    padding-top: $main-padding-top!important;
+    margin-bottom: $main-padding-bottom!important;
+
+    &__container {
+      @media (min-width: 1904px) {
+        max-width: $app-container-width;
+      }
+    }
+  }
+
+  .page-loader {
+    position: absolute;
+    top: 61px;
+  }
+}

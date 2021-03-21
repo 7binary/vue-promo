@@ -1,0 +1,10 @@
+.dashboard {
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+  &__card-text {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+}

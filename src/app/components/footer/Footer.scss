@@ -1,0 +1,10 @@
+@import "../../../assets/scss/variables";
+
+.footer {
+  background-color: $footer-bg-color!important;
+  color: $footer-text-color!important;
+
+  a {
+    color: $footer-text-color!important;
+  }
+}
